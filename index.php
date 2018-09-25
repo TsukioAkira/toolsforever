@@ -21,11 +21,17 @@ if(isset($_POST['bttLogin'])) {
         <tr>
             <td><font color="white">Username</font></td>
 
-            <td><input type="text" name =<font"username" </td>
+            <td>
+				<input type="text" name ="username">
+			</td>
         </tr>
         <tr>
-            <td><font color="white">Password</font></td>
-            <td><input type="password" name ="password" </td>
+            <td>
+				<font color="white">Password</font>
+			</td>
+            <td>
+				<input type="password" name ="password">
+			</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
