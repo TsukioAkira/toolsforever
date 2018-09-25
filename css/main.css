@@ -37,11 +37,12 @@ label {
 
 .login-header {
 	display: flex;
-	justify-content: center;
-	background-color: #F77F00;
-	color: #FFFFFF;
-	padding: 10px;
-	border-bottom: solid 1px black;
+    justify-content: center;
+    background-color: #F77F00;
+    color: #FFFFFF;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-bottom: solid 1px black
 }
 
 ul {

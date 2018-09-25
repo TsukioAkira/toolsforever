@@ -20,7 +20,7 @@
 	   if($result -> num_rows > 0){
 		   
 		   while ($row=$result -> fetch_assoc()){
-			   header('Location: welcome.php');
+			   header('Location: voorraadsysteem.php');
 			   $loginState = true;
 		   }
 	   } else {
