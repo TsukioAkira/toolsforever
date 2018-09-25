@@ -1,0 +1,14 @@
+body {
+	font-family:Works Sans, Helvetica, sans-serif;
+	font-size:14px;
+	background-color: #F8F9FA !important;
+}
+label {
+	font-weight:bold;
+	width:100px;
+	font-size:14px;
+}
+.box {
+	border:#666666 solid 1px;
+}
+
