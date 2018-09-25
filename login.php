@@ -5,13 +5,9 @@
 	   $password = '';
 	   $database = 'toolsforever';
 
+	   $loginState = true;
 
 	   $connect = mysqli_connect($server, $username, $password, $database);
-	   
-	   if ($connect->connect_error) {
-		   die('connection failed');
-	   } else 
-		   //echo 'succesfull';
 	   
 	   $medewerkeremail= $_POST["username"];
 	   $medewerkerwachtwoord= $_POST["password"];
@@ -24,13 +20,11 @@
 	   if($result -> num_rows > 0){
 		   
 		   while ($row=$result -> fetch_assoc()){
-			   //echo "<br> Welkom " . $row["medewerkernaam"];
-			   header('Location: #success');
-			   
-			   //code for redirection here
+			   header('Location: welcome.php');
+			   $loginState = true;
 		   }
 	   } else {
-		   echo "<br> Gebruikersnaam of Wachtwoord is verkeerd ingevuld!";
+		   $loginState = false;
 	   }
    }
 ?>
