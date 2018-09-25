@@ -15,26 +15,35 @@
 		<div class="row card">
 		
 			<div class="Aligner">
-			 <div style = "width:300px; border: solid 1px #333333; " align = "left">
-				<div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
-					
-				<div style = "margin:30px">
-				   
-				   <form action = "" method = "post">
-					  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-					  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-					  <input type = "submit" name = "logging" value = " Submit "/><br />
-				   </form>
-				   
+				<div class="login-box">
+					<div class="login-header"><b>Login</b></div>
+						
+					<div class="m15">
+					   <form action = "" method = "post">
+							
+							<ul class="flex-outer">
+								<li>
+									<label>UserName:</label>
+									<input type = "text" name = "username" class = "box"/>
+								</li>
+								<li>
+									<label>Password:</label>
+									<input type = "password" name = "password" class = "box" />
+								</li>
+								<br />
+								<li>
+									<input type = "submit" name = "logging" value = " Submit "/><br />
+								</li>
+							</ul>
+							
+					   </form>	
+					</div>
 						
 				</div>
-					
-			 </div>
 				
 		  </div>
 		
 		</div>
-		
 	</div>
 
    </body>
