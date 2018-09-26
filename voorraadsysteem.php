@@ -49,7 +49,48 @@
 <section class="container-fluid">
     <div class="card position">
         <div class="card-body">
-            Voorraad hier
+            <?php
+                include "db/connection.php";
+
+                $sql = "SELECT productid, productnaam, productomschrijving, productprijs, fabrieknaam FROM product";
+                $result = $connect->query($sql);
+
+                if ($result -> num_rows > 0) {
+                    echo '
+                            ';
+                    while($row = $result->fetch_assoc()) {
+                        /*echo "ProductID: " . $row["productid"] .
+                            " - Product Naam: " . $row["productnaam"] .
+                            " - Product Omschrijving " . $row["productomschrijving"] .
+                            " - Product Prijs " . $row["productprijs"] .
+                            " - Fabriek Naam" . $row["fabrieknaam"] . "<br />";*/
+
+                        echo '
+                                <table class="table table-striped table-dark">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">ProducID</th>
+                                      <th scope="col">Naam</th>
+                                      <th scope="col">Omschrijving</th>
+                                      <th scope="col">Prijs</th>
+                                      <th scope="col">Fabriek</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">' . $row["productid"] . '</th>
+                                      <td>' . $row["productnaam"] . '</td>
+                                      <td>' . $row["productomschrijving"] . '</td>
+                                      <td>' . $row["productprijs"] . '</td>
+                                    </tr>
+                                  </tbody>
+                                </table>';
+                    }
+                } else {
+                    echo "Geen resultaat gevonden, misschien is er iets mis gegaan.";
+                }
+                $connect->close();
+            ?>
         </div>
     </div>
 </section>
