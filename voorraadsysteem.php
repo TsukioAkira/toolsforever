@@ -97,6 +97,21 @@
 
 	<!-- CONTENT WEBSITE-->
 	<section class="container-fluid position">
+	<div class="card">
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-4 center">
+					<button class="btn btn-black"> Toevoegen </button>
+				</div>
+				<div class="col-md-4 center">
+					<button class="btn btn-black"> Bewerken </button>
+				</div>
+				<div class="col-md-4 center">
+					<button class="btn btn-black"> Verwijderen </button>
+				</div>
+			</div>
+		</div>
+	</div>	
 		<?php
 			dataTable();
 		?>

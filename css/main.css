@@ -156,6 +156,11 @@ label {
 	justify-content: center;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+}
+
 .image-size {
 	height: 250px;
 	width: 400px;
