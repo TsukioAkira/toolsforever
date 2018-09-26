@@ -101,13 +101,13 @@
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-4 center">
-					<button class="btn btn-black"> Toevoegen </button>
+					<a class="btn btn-black" href="toevoegen.php"> Toevoegen </a>
 				</div>
 				<div class="col-md-4 center">
-					<button class="btn btn-black"> Bewerken </button>
+					<a class="btn btn-black" href="bewerken.php"> Bewerken </a>
 				</div>
 				<div class="col-md-4 center">
-					<button class="btn btn-black"> Verwijderen </button>
+					<a class="btn btn-black" href="verwijder.php"> Verwijderen </a>
 				</div>
 			</div>
 		</div>
