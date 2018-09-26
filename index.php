@@ -12,8 +12,8 @@
 <body>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-    <a class="navbar-brand">
+    <!-- logo -->
+    <a class="navbar-brand" href="index.php">
         <img src="img/icon.png" alt="logo" class="logo">
     </a>
 
@@ -29,6 +29,7 @@
 
     </ul>
 
+    <!-- Login Button -->
     <ul class="navbar-nav">
         <li class="nav-item btn btn-black">
             <a class="nav-link" href="loginsession.php">Login</a>

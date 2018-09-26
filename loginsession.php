@@ -16,8 +16,8 @@ include 'login.php';
 <body>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.php">
             <img src="img/icon.png" alt="logo" class="logo">
         </a>
 
@@ -33,9 +33,10 @@ include 'login.php';
 
         </ul>
 
+        <!-- Login Button -->
         <ul class="navbar-nav">
             <li class="nav-item btn btn-black">
-                <a class="nav-link" href="loginsession.php">Login</a>
+                <a class="nav-link" href="">Login</a>
             </li>
         </ul>
     </nav>
