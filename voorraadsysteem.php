@@ -29,11 +29,11 @@
 
     </ul>
 
-    <ul class="navbar-nav">
+    <!--<ul class="navbar-nav">
         <li class="nav-item btn btn-black">
             <a class="nav-link" href="loginsession.php">Login</a>
         </li>
-    </ul>
+    </ul>-->
 </nav>
 
 <!-- HEADER WEBSITE -->
@@ -48,7 +48,7 @@
 <section class="container-fluid">
     <div class="card">
         <div class="card-body">
-            test
+            Voorraad hier
         </div>
     </div>
 </section>

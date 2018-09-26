@@ -1,0 +1,39 @@
+.container-fluid {
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family:Works Sans;
+    font-size:14px;
+    background-color: #F8F9FA;
+}
+
+/* navbar styling inactive links */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+/* navbar */
+.bg-dark {
+    background-color: #F77F00 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+    background-color: #CC6800;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: black !important;
+}
+
+/* end Navbar*/

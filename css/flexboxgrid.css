@@ -266,13 +266,6 @@
   order: 1;
 }
 
-.card {
-	display: flex;
-	justify-content:center;
-	padding: 20px 50px 20px 50px;
-	background-color: #FFFFFF;
-}
-
 @media only screen and (min-width: 48em) {
   .container {
     width: 46rem;
