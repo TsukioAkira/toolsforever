@@ -11,8 +11,7 @@ label {
 }
 
 .m15 {
-    margin: 15px;
-}
+    margin: 15px 25px 15px -20px;}
 
 .login-box {
     border: solid 1px black;
@@ -41,9 +40,7 @@ label {
     border-bottom: solid 1px black
 }
 
-ul {
-    padding: 10px 10px 10px 10px;
-}
+
 /* start flexing */
 .flex-outer li,
 .flex-inner {

@@ -1,5 +1,7 @@
 .btn-orange {
+    padding: 0rem 0.75rem;
     background-color: #F77F00;
+    color: black;
 }
 
 .btn-black {
@@ -31,3 +33,4 @@
     padding-top: 20px;
     padding-bottom: 0px !important;
 }
+

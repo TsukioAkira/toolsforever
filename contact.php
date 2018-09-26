@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand/logo -->
         <a class="navbar-brand">
-            <img src="img/Logo.png" alt="logo" class="logo">
+            <img src="img/icon.png" alt="logo" class="logo">
         </a>
 
         <!-- Links -->
@@ -38,15 +38,15 @@
 
     <!-- HEADER WEBSITE -->
     <section class="container-fluid test">
-        <img class="header-image" src="img/Logo.png" />
+        <img class="header-image" src="img/header.png" />
         <div class="header-text">
-            <h1>ToolsForEver Contact</h1>
+            <h1 class="text-white">ToolsFor</h1><h1 class="text-orange">Ever</h1>
         </div>
     </section>
 
     <!-- CONTENT WEBSITE-->
     <section class="container-fluid">
-        <div class="card">
+        <div class="card position">
             <div class="card-body">
                 test
             </div>

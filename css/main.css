@@ -1,6 +1,18 @@
 .logo {
-    width: 40px;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
 }
+
+
+.position {
+    margin-top: 45px;
+}
+
+.text-orange {
+    color: #F77F00 !important;
+}
+
 .header-image {
     padding: 0;
     height: 17.5rem;
@@ -15,5 +27,23 @@
     display: flex;
     place-content: center;
     margin-top: -200px;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-sub-text {
+        display: flex;
+        /*place-content: center;*/
+        margin-left: 50.5%;
+        margin-top: -140px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .header-sub-text {
+        display: flex;
+        /*place-content: center;*/
+        margin-left: 51%;
+        margin-top: -140px;
+    }
 }
