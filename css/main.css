@@ -145,6 +145,11 @@ label {
 }
 /* end nav button styling*/
 
+.modal-body.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .logo {
     width: 60px;
     height: 60px;

@@ -1,4 +1,4 @@
-<?php 
+<?php
 	function dataTable() {
 	include "db/connection.php";
 	
@@ -58,6 +58,9 @@
 </head>
 
 <body>
+<?php  
+	include "toevoegen.php";
+?>
 	<!-- NAVIGATION BAR -->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- logo -->
@@ -101,7 +104,9 @@
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-4 center">
-					<a class="btn btn-black" href="toevoegen.php"> Toevoegen </a>
+				    <!-- Button opening the modal for adding Members. -->
+                    <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="toevoegen.php">Toevoegen</a>
+					<!--<a class="btn btn-black" href="toevoegen.php"> Toevoegen </a>-->
 				</div>
 				<div class="col-md-4 center">
 					<a class="btn btn-black" href="bewerken.php"> Bewerken </a>
