@@ -21,7 +21,7 @@
     <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
-            <a class="nav-link active">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact</a>
