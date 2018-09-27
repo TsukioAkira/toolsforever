@@ -1,6 +1,10 @@
 <?php
 	function dataTable() {
 	include "db/connection.php";
+
+	if(isset($_POST["removeProduct"])) {
+	    echo 'LOOOL';
+    }
 	
 		//$sql = "SELECT product.productid, product.productnaam, product.productomschrijving, product.productprijs, product.fabrieknaam FROM product INNER JOIN voorraadgegevens ON product.productid = voorraadgegevens.productid";
 		$sql = "SELECT product.*, vr.* FROM product INNER JOIN voorraadgegevens vr ON product.productid = vr.productid";
@@ -38,10 +42,10 @@
 						<td scope="row">' . $row["fabrieknaam"] . '</td>
 						<td scope="row">' . $row["locatienaam"] . '</td>
 						<td scope="row">
-						    <a class="btn btn-black btn-size" type="button" id="' . $row["productid"] . '">
+						    <a name="editProduct" class="btn btn-black btn-size" type="submit" id="' . $row["productid"] . '">
 						        <img class="icon" src="img/delete.png"> Verwijder
 						    </a>
-						    <a class="btn btn-black btn-size" type="button" id="'. $row["productid"] .'">
+						    <a name="deleteProduct" class="btn btn-black btn-size" type="submit" id="'. $row["productid"] .'">
 						        <img class="icon" src="img/edit.png" /> Bewerk 
                             </a>
 						</td>
@@ -117,7 +121,7 @@
                     <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="bewerken.php">Bewerken</a>
 				</div>
 				<div class="col-md-4 center">
-                    <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="verwijder.php">Verwijkeren</a>
+                    <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="verwijder.php">Verwijderen</a>
 				</div>
 			</div>
 		</div>
