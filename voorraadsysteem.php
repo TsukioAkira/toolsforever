@@ -38,10 +38,10 @@
 						<td scope="row">' . $row["fabrieknaam"] . '</td>
 						<td scope="row">' . $row["locatienaam"] . '</td>
 						<td scope="row">
-						    <a class="btn btn-black" type="button" id="' . $row["productid"] . '">
+						    <a class="btn btn-black btn-size" type="button" id="' . $row["productid"] . '">
 						        <img class="icon" src="img/delete.png"> Verwijder
 						    </a>
-						    <a class="btn btn-black" type="button" id="'. $row["productid"] .'">
+						    <a class="btn btn-black btn-size" type="button" id="'. $row["productid"] .'">
 						        <img class="icon" src="img/edit.png" /> Bewerk 
                             </a>
 						</td>
