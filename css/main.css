@@ -145,7 +145,7 @@ label {
 }
 /* end nav button styling*/
 
-.modal-body.flex {
+.card-body.flex {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -208,4 +208,24 @@ label {
     display: flex;
     place-content: center;
     margin-top: -200px;
+}
+
+a:hover {
+    color: #F77F00;
+}
+
+.icon {
+    width: 25px;
+    height: 20px;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-header {
+    padding: 0.45rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }

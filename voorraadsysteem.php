@@ -30,13 +30,21 @@
 				//var_dump ($row);
 				echo '
 					<tr>
-						<th scope="row">' . $row["productid"] . '</th>
+						<th scope="row" id="' . $row["productid"] . '">' . $row["productid"] . '</th>
 						<td scope="row">' . $row["productnaam"] . '</td>
 						<td scope="row">' . $row["productomschrijving"] . '</td>
 						<td scope="row">' . $row["productprijs"] . '</td>
 						<td scope="row">' . $row["productvoorraad"] . '</td>
 						<td scope="row">' . $row["fabrieknaam"] . '</td>
 						<td scope="row">' . $row["locatienaam"] . '</td>
+						<td scope="row">
+						    <a class="btn btn-black" type="button" id="' . $row["productid"] . '">
+						        <img class="icon" src="img/delete.png"> Verwijder
+						    </a>
+						    <a class="btn btn-black" type="button" id="'. $row["productid"] .'">
+						        <img class="icon" src="img/edit.png" /> Bewerk 
+                            </a>
+						</td>
 					</tr>';
 			}
 			echo '
@@ -58,9 +66,6 @@
 </head>
 
 <body>
-<?php  
-	include "toevoegen.php";
-?>
 	<!-- NAVIGATION BAR -->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- logo -->
@@ -109,10 +114,10 @@
 					<!--<a class="btn btn-black" href="toevoegen.php"> Toevoegen </a>-->
 				</div>
 				<div class="col-md-4 center">
-					<a class="btn btn-black" href="bewerken.php"> Bewerken </a>
+                    <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="bewerken.php">Bewerken</a>
 				</div>
 				<div class="col-md-4 center">
-					<a class="btn btn-black" href="verwijder.php"> Verwijderen </a>
+                    <a id="ToevoegenLidModal" name="ToevoegenLidModal" type="button" class="btn btn-black" href="verwijder.php">Verwijkeren</a>
 				</div>
 			</div>
 		</div>
