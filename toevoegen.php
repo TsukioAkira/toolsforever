@@ -12,8 +12,8 @@ include "db/connection.php";
 
             //create the query corresponding to the data filled in the form.
             $stmt = $connect->prepare("INSERT INTO product 
-                                                              (productnaam,productomschrijving,productinkoopprijs,productprijs,fabrieknaam)
-                                                              VALUES (?,?,?,?,?)");
+                                       (productnaam,productomschrijving,productinkoopprijs,productprijs,fabrieknaam)
+                                        VALUES (?,?,?,?,?)");
             //bind the parameters of "?" above to the corresponding order shown below.
             $stmt->bind_param("sssss", $productnaam, $productomschrijving, $productinkoopprijs, $productprijs, $fabrieknaam);
             //execute the query.

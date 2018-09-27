@@ -1,6 +1,6 @@
 <?php
 include "db/connection.php";
-if(isset($_POST["FormPostAdd"])) {
+if(isset($_POST["FormPostDelete"])) {
     $querySucess = false;
     function remove($connect) {
         //initialize filled in data from the form.
@@ -121,7 +121,7 @@ if(isset($_POST["FormPostAdd"])) {
 
             </div>
             <div class="modal-footer">
-                <button id="FormPostAdd" name="FormPostAdd" type="submit" class="btn btn-default">Verwijderen</button>
+                <button id="FormPostDelete" name="FormPostDelete" type="submit" class="btn btn-default">Verwijderen</button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
             </div>
         </form>
