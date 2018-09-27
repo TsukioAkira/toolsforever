@@ -121,8 +121,8 @@ if(isset($_POST["FormPostDelete"])) {
 
             </div>
             <div class="modal-footer">
-                <button id="FormPostDelete" name="FormPostDelete" type="submit" class="btn btn-default">Verwijderen</button>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+                <button id="FormPostDelete" name="FormPostDelete" type="submit" class="btn btn-black">Verwijderen</button>
+                <button type="button" class="btn btn-black" data-dismiss="modal">Annuleren</button>
             </div>
         </form>
         <!-- /.modal-footer End -->

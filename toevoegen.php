@@ -169,8 +169,8 @@ include "db/connection.php";
 
                 </div>
                 <div class="modal-footer">
-                    <button id="FormPostAdd" name="FormPostAdd" type="submit" class="btn btn-default">Toevoegen</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+                    <button id="FormPostAdd" name="FormPostAdd" type="submit" class="btn btn-black">Toevoegen</button>
+                    <button type="button" class="btn btn-black" data-dismiss="modal">Annuleren</button>
                 </div>
             </form>
             <!-- /.modal-footer End -->

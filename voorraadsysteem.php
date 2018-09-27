@@ -41,14 +41,6 @@
 						<td scope="row">' . $row["productvoorraad"] . '</td>
 						<td scope="row">' . $row["fabrieknaam"] . '</td>
 						<td scope="row">' . $row["locatienaam"] . '</td>
-						<td scope="row">
-						    <a name="editProduct" class="btn btn-black btn-size" type="submit" id="' . $row["productid"] . '">
-						        <img class="icon" src="img/delete.png"> Verwijder
-						    </a>
-						    <a name="deleteProduct" class="btn btn-black btn-size" type="submit" id="'. $row["productid"] .'">
-						        <img class="icon" src="img/edit.png" /> Bewerk 
-                            </a>
-						</td>
 					</tr>';
 			}
 			echo '

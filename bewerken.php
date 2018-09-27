@@ -1,14 +1,21 @@
 <?php
 include "db/connection.php";
 if(isset($_POST["FormPostEdit"])) {
+
     function updatevoorraad($connect) {
+
         $productvoorraad = $_POST['Productvoorraad'];
         $productid = $_POST['Productid'];
         $locatie = $_POST['Locatie'];
 
+//
+//        $sql = 'UPDATE voorraadgegevens SET productvoorraad = ' . $productvoorraad . ' WHERE productid = ' . $productid . ' AND locatienaam = ' . $locatie;
+//
+//        $connect->query($sql);
+
         $stmt = $connect->prepare("UPDATE voorraadgegevens SET productvoorraad = (?) WHERE productid = (?) AND locatienaam = (?)");
 
-        $stmt->bind_param("sss", $productvoorraad, $productid, $locatie);
+        $stmt->bind_param("iis", $productvoorraad, $productid, $locatie);
 
         $stmt->execute();
         $stmt->close();
@@ -100,8 +107,8 @@ if(isset($_POST["FormPostEdit"])) {
 
             </div>
             <div class="modal-footer">
-                <a id="FormPostEdit" name="FormPostEdit" type="submit" class="btn btn-default" href="voorraadsysteem.php">Bewerken</a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
+                <a id="FormPostEdit" name="FormPostEdit" type="submit" class="btn btn-black" href="voorraadsysteem.php">Bewerken</a>
+                <button type="button" class="btn btn-black" data-dismiss="modal">Annuleren</button>
             </div>
         </form>
         <!-- /.modal-footer End -->
